@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shourt icon" href="./assets/logoTrelloApp.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Trello App</title>
+</head>
+<body>
+    <!--Header-->    
+    <header class="encabezado">
+        <div class="contenedorHeader">
+            <img class="logo" src="./assets/Trello-logo.png" alt="Logo trello App">
+            <button class="botonNuevaTarea"> Crear nueva tarea </button>
+        </div>
+    </header>
+    <!-- Fin Header-->
+
+    <!--Contenedor columnas-->
+    <main class="contenedorPrincipal">
+        <div class="contenedorMain">
+            <!--Columna tareas por hacer-->
+            <section class="seccionApp">
+                <h2 class="seccionEstadoTitulo">Por hacer</h2>
+                <div class="contenedorTareas" id="tareasPorHacer"></div>
+                </section>
+                <!--Fin Columna tareas por hacer-->
+
+                <!--Columna tareas en progreso-->
+            <section class="seccionApp">
+                <h2 class="seccionEstadoTitulo">En progreso</h2>
+                <div class="contenedorTareas" id="tareasEnProgreso"></div>
+                </section>
+                <!--Fin Columna tareas en progreso-->
+
+                 <!--Columna tareas finalizadas-->
+            <section class="seccionApp">
+                <h2 class="seccionEstadoTitulo">Finalizadas</h2>
+                <div class="contenedorTareas" id="tareasFinalizadas"></div>
+                </section>
+                <!--Fin Columna tareas finalizadas-->
+        </div>
+    </main>
+    <!--Fin Contenedor columnas-->
+
+    <!--Aside Crear nueva tarea-->
+    <aside class="asideApp" id="nuevaTarea">
+        <div class="contenedorAside">
+            <div class="formularioContenedor">
+                <h2 class="asideformTitulo">Nueva tarea</h2>
+                <form class="formNuevaTarea" id="formNuevaTarea">
+                    <!--Input titulo-->
+                    <div class="filaFormulario">
+                        <label for="tituloTarea" class="formaNuevaTarea">Título:</label> <br>
+                        <input id="tituloTarea" name="tituloTarea" type="text" class="formNuevatareaInput" placeholder="Escribe un título para la tarea">      
+                    </div>
+                    <!--Fin Input titulo-->
+
+                    <!--Input responsable-->
+                    <div class="filaFormulario">
+                        <label for="responsableTarea" class="formaNuevaTarea">Responsable:</label> <br>
+                        <select name="responsableTarea" id="responsableTarea" class="formNuevatareaInput">
+                            <option value="">--Seleccionar--</option>
+                            <option value="usuario1">Leydi</option>
+                            <option value="usuario2">Johana</option>
+                        </select>
+                    </div>
+                    <!--Fin Input responsable-->
+
+                    <!--Input plazo-->
+                    <div class="filaFormulario">
+                        <label for="plazoTarea" class="formaNuevaTarea">Plazo de entrega:</label> <br>
+                        <select name="plazoTarea" id="plazoTarea" class="formNuevatareaInput">
+                            <option value="">--Seleccionar--</option>
+                            <option value="unDia">1 Día</option>
+                            <option value="dosDias">2 Días</option>
+                            <option value="unaSemana">1 Semana</option>
+                        </select>
+                    </div>
+                    <!--End Input plazo-->
+                    
+                    <!--Botones-->
+                    <div class="botones">
+                        <div class="FormaNuevaTarea_Botones"> 
+                            <button class="botonGuardar" type="submit">Guardar</button>
+                            <button type="reset" class="botonCancelar" id="botonCancelarNuevaTarea">Cancelar</button>
+                        </div>
+                    </div>
+                    <!--Fin Botones-->        
+                </form>
+            </div>
+        </div>
+
+    </aside>
+    <!--End Aside -->
+
+    <script src="index.js"></script>
+</body>
+</html>
