@@ -24,21 +24,21 @@
         <div class="contenedorMain">
             <!--Columna tareas por hacer-->
             <section class="seccionApp">
-                <h2 class="seccionEstadoTitulo">Por hacer</h2>
+                <h2 class="seccionEstadoTitulo">Tareas por hacer</h2>
                 <div class="contenedorTareas" id="tareasPorHacer"></div>
                 </section>
                 <!--Fin Columna tareas por hacer-->
 
                 <!--Columna tareas en progreso-->
             <section class="seccionApp">
-                <h2 class="seccionEstadoTitulo">En progreso</h2>
+                <h2 class="seccionEstadoTitulo">Tareas en progreso</h2>
                 <div class="contenedorTareas" id="tareasEnProgreso"></div>
                 </section>
                 <!--Fin Columna tareas en progreso-->
 
                  <!--Columna tareas finalizadas-->
             <section class="seccionApp">
-                <h2 class="seccionEstadoTitulo">Finalizadas</h2>
+                <h2 class="seccionEstadoTitulo">Tareas finalizadas</h2>
                 <div class="contenedorTareas" id="tareasFinalizadas"></div>
                 </section>
                 <!--Fin Columna tareas finalizadas-->
@@ -59,13 +59,21 @@
                     </div>
                     <!--Fin Input titulo-->
 
+                    <!--Input Descripción-->
+                    <div class="filaFormulario">
+                        <label for="tituloTarea" class="formaNuevaTarea">Descripción:</label> <br>
+                        <input id="descripcionTarea" name="descripcionTarea" type="text" class="formNuevatareaInput" placeholder="Descripción de la tarea">      
+                    </div>
+                    <!--Fin Input Descripción-->
+
+
                     <!--Input responsable-->
                     <div class="filaFormulario">
                         <label for="responsableTarea" class="formaNuevaTarea">Responsable:</label> <br>
                         <select name="responsableTarea" id="responsableTarea" class="formNuevatareaInput">
-                            <option value="">--Seleccionar--</option>
-                            <option value="usuario1">Leydi</option>
-                            <option value="usuario2">Johana</option>
+                            <option value="">Seleccionar</option>
+                            <option value="usuario1">Usuario 1</option>
+                            <option value="usuario2">Usuario 2</option>
                         </select>
                     </div>
                     <!--Fin Input responsable-->
@@ -74,7 +82,7 @@
                     <div class="filaFormulario">
                         <label for="plazoTarea" class="formaNuevaTarea">Plazo de entrega:</label> <br>
                         <select name="plazoTarea" id="plazoTarea" class="formNuevatareaInput">
-                            <option value="">--Seleccionar--</option>
+                            <option value="">Seleccionar</option>
                             <option value="unDia">1 Día</option>
                             <option value="dosDias">2 Días</option>
                             <option value="unaSemana">1 Semana</option>
