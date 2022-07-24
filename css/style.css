@@ -5,10 +5,17 @@ header {
     padding: 5px;
 }
 
+.logo {
+    width: 6%;
+    height: 6%;
+    padding-top: 7px;
+}
+
+
 .main-app
 {
   flex-direction: column;
-  background: linear-gradient(90deg, rgb(37, 59, 182) 0%, rgb(83, 99, 189) 35%, rgb(91, 65, 233) 100%);
+  background: rgb(216, 221, 247);
 
 }
 
@@ -20,11 +27,13 @@ header {
   gap: 1rem;
 }
 
-.logo {
-    width: 6%;
-    height: 6%;
-    padding-top: 7px;
+.l-container 
+{
+  width: 100%;
+  padding: 1rem;
+
 }
+
 
 
 .button.button-primary {
@@ -51,13 +60,6 @@ header {
 .button.button-primary:active {
     transform: translateY(2px);
     background-color:  rgb(17, 34, 133) ;
-}
-
-.l-container 
-{
-  width: 100%;
-  padding: 1rem;
-
 }
 
 .section-app {
@@ -131,14 +133,10 @@ header {
 
 .aside-form-title {
     color: rgb(0, 0, 0);
-    font-size: 1.5rem;
+    font-size: 15pt;
+    font-family: sans-serif;
 }
 
-.form-container{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;   
-}
 
 .row-form {
     margin: 15px;
@@ -147,14 +145,13 @@ header {
 }
 
 .form-new-task__input {
-    border: none;
+    border-style: groove;
     border-radius: 3px;
-    font-size: 10pt;
-    width: 200px;
+    font-size: 11pt;
+    width: 300px;
     height: 50px;
     padding-left: 7px;
-    background-color: aqua;
-
+    padding: 5px;
 }
 
 .form-new-task__label{
@@ -190,18 +187,10 @@ header {
     background-color: rgb(17, 34, 133) ;
 }
 
-.form-new-task
-{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 .row-form
 {
   display: flex;
   flex-direction: column;
-  gap: 1rem / 4;
 }
 
 .form-new-task__input,
