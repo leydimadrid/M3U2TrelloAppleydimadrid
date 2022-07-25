@@ -11,35 +11,35 @@
 </head>
 <body>
     <!--Header-->    
-    <header class="l-app" id="app">
-        <div class="header-app">
+    <header class="lApp" id="app">
+        <div class="headerApp">
             <img class="logo" src="./assets/Trello-logo.png" alt="Logo trello App">
-            <button class="button button-primary" id="btnNewTask"> Crear nueva tarea </button>
+            <button class="button buttonPrimary" id="btnNewTask"> Crear nueva tarea </button>
         </div>
     </header>
     <!-- Fin Header-->
 
     <!--Contenedor columnas-->
-    <main class="main-app">
-        <div class="l-container">
+    <main class="mainApp">
+        <div class="lContainer">
             <!--Columna tareas por hacer-->
-            <section class="section-app">
-                <h2 class="section-status-title">Tareas por hacer</h2>
-                <div class="container-tasks" id="todoTasks"></div>
+            <section class="sectionApp">
+                <h2 class="sectionStatusTitle">Tareas por hacer</h2>
+                <div class="containerTasks" id="todoTasks"></div>
                 </section>
                 <!--Fin Columna tareas por hacer-->
 
                 <!--Columna tareas en progreso-->
-            <section class="section-app">
-                <h2 class="section-status-title">Tareas en progreso</h2>
-                <div class="container-tasks" id="progressTasks"></div>
+            <section class="sectionApp">
+                <h2 class="sectionStatusTitle">Tareas en progreso</h2>
+                <div class="containerTasks" id="progressTasks"></div>
                 </section>
                 <!--Fin Columna tareas en progreso-->
 
                  <!--Columna tareas finalizadas-->
-            <section class="section-app">
-                <h2 class="section-status-title">Tareas finalizadas</h2>
-                <div class="container-tasks" id="doneTasks"></div>
+            <section class="sectionApp">
+                <h2 class="sectionStatusTitle">Tareas finalizadas</h2>
+                <div class="containerTasks" id="doneTasks"></div>
                 </section>
                 <!--Fin Columna tareas finalizadas-->
         </div>
@@ -47,30 +47,30 @@
     <!--Fin Contenedor columnas-->
 
     <!--Aside Crear nueva tarea-->
-    <aside class="aside-app" id="modalNewTask">
-        <div class="l-container">
-            <div class="form-container">
-                <h2 class="aside-form-title">Nueva tarea</h2>
-                <form class="form-new-task" id="form-new-task">
+    <aside class="asideApp" id="modalNewTask">
+        <div class="lContainer">
+            <div class="formContainer">
+                <h2 class="asideFormTitle">Nueva tarea</h2>
+                <form class="formNewTask" id="form-new-task">
                     <!--Input titulo-->
-                    <div class="row-form">
-                        <label for="titleTask" class="form-new-task__label">Título:</label> <br>
-                        <input id="titleTask" name="titleTask" type="text" class="form-new-task__input" placeholder="Escribe un título para la tarea">      
+                    <div class="rowForm">
+                        <label for="titleTask" class="formNewTaskLabel">Título:</label> <br>
+                        <input id="titleTask" name="titleTask" type="text" class="formNewTaskInput" placeholder="Escribe un título para la tarea">      
                     </div>
                     <!--Fin Input titulo-->
 
                     <!--Input Descripción-->
-                    <div class="row-form">
-                        <label for="detailsTask" class="form-new-task__label">Descripción:</label> <br>
-                        <input class="form-new-task__input" name="detailsTask" id="detailsTask" placeholder="Ingresa la descripción de la tarea"></textarea>
+                    <div class="rowForm">
+                        <label for="detailsTask" class="formNewTaskLabel">Descripción:</label> <br>
+                        <input class="formNewTaskInput" name="detailsTask" id="detailsTask" placeholder="Ingresa la descripción de la tarea"></textarea>
                     </div>
                     <!--Fin Input Descripción-->
 
 
                     <!--Input responsable-->
-                    <div class="row-form">
-                        <label for="responsibleTask" class="form-new-task__label">Responsable:</label> <br>
-                        <select name="responsibleTask" id="responsibleTask" class="form-new-task__input">
+                    <div class="rowForm">
+                        <label for="responsibleTask" class="formNewTaskLabel">Responsable:</label> <br>
+                        <select name="responsibleTask" id="responsibleTask" class="formNewTaskInput">
                             <option value="">Seleccionar</option>
                             <option value="Leydi">Leydi</option>
                             <option value="Johana">Johana</option>
@@ -79,9 +79,9 @@
                     <!--Fin Input responsable-->
 
                     <!--Input plazo-->
-                    <div class="row-form">
-                        <label for="deadLineTask" class="form-new-task__label">Plazo de entrega:</label> <br>
-                        <select name="deadLineTask" id="deadLineTask" class="form-new-task__input">
+                    <div class="rowForm">
+                        <label for="deadLineTask" class="formNewTaskLabel">Plazo de entrega:</label> <br>
+                        <select name="deadLineTask" id="deadLineTask" class="formNewTaskInput">
                             <option value="">Seleccionar</option>
                             <option value="unDia">1 Día</option>
                             <option value="dosDias">2 Días</option>
@@ -91,10 +91,10 @@
                     <!--End Input plazo-->
                     
                     <!--Botones-->
-                    <div class="row-form">
-                        <div class="form-new-task__buttons"> 
-                            <button class="button button-primary" type="submit">Guardar</button>
-                            <button type="reset" class="button button-secondary ghost" id="btnCancelNewTask">Cancelar</button>
+                    <div class="rowForm">
+                        <div class="formNewTaskButtons"> 
+                            <button class="button buttonPrimary" type="submit">Guardar</button>
+                            <button type="reset" class="button buttonSecondary ghost" id="btnCancelNewTask">Cancelar</button>
                         </div>
                     </div>
                     <!--Fin Botones-->        
@@ -106,7 +106,7 @@
     <!--End Aside -->
 
     <!-- Recursos externos -->
-    <script src="/js/libraries/axios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>">
     <script src="https://momentjs.com/downloads/moment.js"></script>
 
     <!-- Recursos internos -->

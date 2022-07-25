@@ -11,29 +11,29 @@ const showAllTasks = (data) => {
 
 const createTask = (task) => {
   let newTask = document.createElement("article");
-  newTask.classList.add("card-task");
+  newTask.classList.add("cardTask");
 
   let taskTitle = document.createElement("h3");
-  taskTitle.classList.add("card-task__title");
+  taskTitle.classList.add("cardTaskTitle");
   taskTitle.innerText = task.title;
 
   let taskResponsible = document.createElement("p");
-  taskResponsible.classList.add("card_task__responsible");
-  taskResponsible.innerHTML = `<span class="card_task__responsible--tag-creator">Responsable:</span> ${task.person}`;
+  taskResponsible.classList.add("cardTaskResponsible");
+  taskResponsible.innerHTML = `<span class="cardTaskResponsible-tag-creator">Responsable:</span> ${task.person}`;
 
   let taskDetails = document.createElement("p");
-  taskDetails.classList.add("card-task__details");
-  taskDetails.innerHTML = `<span class="card-task__details--task-details">Descripción:</span> ${task.details} `;
+  taskDetails.classList.add("cardTaskDetails");
+  taskDetails.innerHTML = `<span class="cardTaskDetails-task-details">Descripción:</span> ${task.details} `;
 
   let taskDate = document.createElement("p");
-  taskDate.classList.add("card-task__date");
-  taskDate.innerHTML = `<span class="card-task__date--tag-date">Plazo:</span> ${dateFormat(
+  taskDate.classList.add("cardTaskDate");
+  taskDate.innerHTML = `<span class="cardTaskDate-tag-date">Plazo:</span> ${dateFormat(
     task.deadline
   )}`;
 
   let taskCreate = document.createElement("p")
-  taskCreate.classList.add("card-task__date")
-  taskCreate.innerHTML = `<span class="card-task__date--tag-date">Creación:</span> ${dateFormat(
+  taskCreate.classList.add("cardTaskDate")
+  taskCreate.innerHTML = `<span class="cardTaskDate-tag-date">Creación:</span> ${dateFormat(
     task.created
   )}`;
   
