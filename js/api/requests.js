@@ -13,9 +13,9 @@ const createTask = (task) => {
   let newTask = document.createElement("article");
   newTask.classList.add("cardTask");
 
-  let taskTitle = document.createElement("h3");
+  let taskTitle = document.createElement("p");
   taskTitle.classList.add("cardTaskTitle");
-  taskTitle.innerText = task.title;
+  taskTitle.innerHTML = `<span class="cardTaskTitle-tag-Title">Tarea:</span> ${task.title}`;
 
   let taskResponsible = document.createElement("p");
   taskResponsible.classList.add("cardTaskResponsible");

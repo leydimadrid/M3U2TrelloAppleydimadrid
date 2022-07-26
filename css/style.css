@@ -5,18 +5,23 @@ header {
 
 }
 
-
+.lApp {
+  margin-bottom: 7px;
+}
 
 .logo {
     width: 80PX;
     height: 20PX;
-    padding-top: 7px;
+    padding-top: 14px;
+    padding-left: 7px;
 }
 
 
 .mainApp
 {
   flex-direction: column;
+  background: linear-gradient(90deg, rgb(156, 186, 231) 100%, rgb(149, 182, 231) 30%);
+  
 }
 
 .mainApp,
@@ -31,7 +36,6 @@ header {
 {
   width: 100%;
   padding: 1rem;
-
 }
 
 
@@ -65,25 +69,68 @@ header {
 .sectionApp {
     display: flex;
     flex-direction:column;
-    gap: 1rem;
     min-width: 300px;
     height: 650px;
     padding: 10px;
-    align-items: center;
     padding-left: 10px;
-    margin-left: 10px;
-    background-color: #c5dcfd;
-    border-radius: 3px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 
 .sectionStatusTitle {
     color: rgb(0, 0, 0);
     font-family:sans-serif;
-    font-size: 15pt;
+    font-size: 14pt;
     border-radius: 3px;
     text-align:left;
     width: 300px;
+    margin: 3px 3px 3px 0px;
+    font-stretch:ultra-expanded;
+}
+
+.sign1 {
+  background-color: rgb(47, 84, 206);
+  width: 30px;
+  height: 10px;
+  border-radius: 7px;
+  margin-bottom: 8px;
+}
+
+.sign2 {
+  background-color: rgb(240, 95, 12);
+  width: 30px;
+  height: 10px;
+  border-radius: 7px;
+  margin-bottom: 8px; 
+}
+
+.sign3 {
+  background-color: rgb(35, 179, 59);
+  width: 30px;
+  height: 10px;
+  border-radius: 7px;
+  margin-bottom: 8px; 
+}
+
+
+
+hr {
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  border:#000000;
+  margin-bottom: 6px;
+  width: 300px; 
+}
+
+.asideFormTitle hr 
+{
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  border:#000000;
+  margin: 6px 0px 0px 0px;
+  width: 115px;  
 }
 
 .containerTasks {
@@ -91,11 +138,10 @@ header {
     display: flex;
     flex-direction:column;
     gap: 1rem;
-    background-color:rgb(255, 255, 255);
-    border-radius: 3px;
+    border-radius: 5px;
     width: 300px;
     height: 650px;
-    box-shadow: 2px 2px 5px 2px #999 ;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .asideApp {
@@ -104,14 +150,16 @@ header {
   right: 0;
   width: 100%;
   max-width: 350px;
-  height: 400px;
-  padding: 16px;
-  background-color:  #ebebeb;
+  height: 350px;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #f1f1f1;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transform: translate(100%);
   will-change: transform;
   transition: transform 300ms ease-in-out;
   z-index: 100;
+  border-radius: 5px;
 }
 
 .asideApp.active
@@ -120,52 +168,43 @@ header {
 }
 
 
-.contenedorAside { 
-    margin-top: 10px;
-    width: 250px;
-    height: 380px;
-    text-align: left;
-    background-color: rgb(243, 242, 242);
-    font-family:sans-serif;
-    border-radius: 3px;
-}
-
 .asideFormTitle {
     color: rgb(0, 0, 0);
     font-size: 15pt;
     font-family: sans-serif;
+    margin: 0px 0px 10px 0px;
 }
 
 
 .rowForm {
-    margin: 15px;
-    height: 40px;
-    padding-top: 8px;
-    display: flex;
-    flex-direction: column;
+    height: 50px;
+    padding-bottom: 10px;
+}
 
+.formNewTask {
+  margin:  0px;
+  padding: 0px;
 }
 
 .formNewTaskInput {
-    border-style: groove;
+    border-style:ridge;
     border-radius: 3px;
-    font-size: 11pt;
+    font-size: 12pt;
     width: 300px;
-    height: 50px;
+    height: 20px;
     padding-left: 7px;
-    padding: 5px;
- 
 }
 
-.formNewTaskInput,
-select
+#responsibleTask, #deadLineTask
 {
-  padding: 1rem / 2;
+  height: 25px;
+  width: 312px;
 }
 
 .formNewTaskLabel{
     font-size: 12pt;
     font-family: sans-serif;
+    font-weight:lighter;
 }
 
 
@@ -217,13 +256,9 @@ button
   box-shadow:  0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   border-radius: 0.313rem;
   cursor: pointer;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(255, 255, 255);
   height: 180px;
-  max-width: 300px;
-  
+  max-width: 300px;  
 }
 
 .cardTask:hover
@@ -238,8 +273,8 @@ button
   font-family: sans-serif;
 }
 
-.cardTaskResponsible,
-.cardTaskDate
+.cardTaskResponsible, .cardTaskDetails,
+.cardTaskDate, .cardTaskTitle
 {
   font-size: 12pt;
   color:  #000000;
@@ -247,9 +282,12 @@ button
 }
 
 .cardTaskResponsible-tag-creator,
-.cardTaskDate-tag-date
+.cardTaskDate-tag-date, .cardTaskDetails-task-details, .cardTaskTitle-tag-Title
 {
   font-size: 12pt;
   color: #080d19;
   font-family: sans-serif;
+  font-weight:bolder;
+  font-stretch:expanded;
 }
+
