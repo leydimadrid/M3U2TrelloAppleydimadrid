@@ -51,7 +51,7 @@
         <div class="lContainer">
             <div class="formContainer">
                 <h2 class="asideFormTitle">Nueva tarea</h2>
-                <form class="formNewTask" id="form-new-task">
+                <form class="formNewTask" id="formNewTask">
                     <!--Input titulo-->
                     <div class="rowForm">
                         <label for="titleTask" class="formNewTaskLabel">Título:</label> <br>
@@ -108,10 +108,15 @@
     <!-- Recursos externos -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>">
     <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="/libraries/draggable.js"></script>
+    <script src="/libraries/hammer.js"></script>
 
     <!-- Recursos internos -->
     <script src="/js/api/requests.js"></script>
     <script src="/js/helpers/toggleModal.js"></script>
     <script src="/js/helpers/dates.js"></script>
+    <script src="/js/helpers/draggandDrop.js"></script>
+    <script src="/js/helpers/gesturesHammer.js"></script>
+    <script src="js/helpers/newTask.js"></script>
 </body>
 </html>

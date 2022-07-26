@@ -4,6 +4,7 @@
             "id": 1,
             "title": "Frontend",
             "person": "Leydi",
+            "details": "Por definir",
             "state": "to-do",
             "deadline": 1615524959,
             "created": 1615352159
@@ -12,6 +13,7 @@
             "id": 2,
             "title": "Backend",
             "person": "Johana",
+            "details": "Por definir",
             "state": "in-progress",
             "deadline": 1615524959,
             "created": 1615352159

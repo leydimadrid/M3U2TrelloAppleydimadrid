@@ -1,1 +1,4 @@
-const sor = new Sortable.default 
+const sor = new Sortable.default(
+    document.querySelectorAll('.containerTasks'),
+    {draggable: 'article'}
+)
