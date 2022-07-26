@@ -7,14 +7,14 @@ form.addEventListener('submit', (ev) => {
     const data = {
         title: formData.titleTask.value,
         person: formData.responsibleTask.value,
-        details: FormData.detailsTask.value,
-        deadline: Number(moment().add(formData.detailsTask.value, 'days').format('X')),
+        details: formData.detailsTask.value,
+        deadline: Number(moment().add(formData.deadLineTask.value, 'days').format('X')),
         created: Number(moment().format("X")),
         state: 'to-do'
         
     };
 
-    axios.post(`${API_URL}/taks`, data)
+    axios.post(`${API_URL}/tasks`, data)
         .then((res) => {
             createTask(res.data);
             formData.reset();
