@@ -1,3 +1,4 @@
+
 header {
     height: 50px;
     background-color: rgb(255, 255, 255);
@@ -177,6 +178,7 @@ hr {
 
 
 .rowForm {
+    width: 320px;
     height: 50px;
     padding-bottom: 10px;
 }
@@ -184,6 +186,7 @@ hr {
 .formNewTask {
   margin:  0px;
   padding: 0px;
+  width: 320px;
 }
 
 .formNewTaskInput {
@@ -220,7 +223,6 @@ hr {
     border-radius: 4px;
     background:rgb(67, 85, 182);
     border: transparent;
-    width: 80px;
     height: 30px;
     box-shadow: 2px 2px 4px 1px rgb(141, 141, 141) ;
     cursor:pointer;
@@ -234,7 +236,6 @@ hr {
     transform: translateY(2px);
     background-color: rgb(17, 34, 133) ;
 }
-
 
 
 
@@ -252,12 +253,12 @@ button
 
 .cardTask
 {
-  padding: 8px;
+  padding: 8px ;
   box-shadow:  0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   border-radius: 0.313rem;
   cursor: pointer;
   background-color: rgb(255, 255, 255);
-  height: 180px;
+  max-height: 200px;
   max-width: 300px;  
 }
 
@@ -274,7 +275,7 @@ button
 }
 
 .cardTaskResponsible, .cardTaskDetails,
-.cardTaskDate, .cardTaskTitle
+.cardTaskDate, .cardTaskTitle, .cardTaskCreate
 {
   font-size: 12pt;
   color:  #000000;
@@ -282,7 +283,7 @@ button
 }
 
 .cardTaskResponsible-tag-creator,
-.cardTaskDate-tag-date, .cardTaskDetails-task-details, .cardTaskTitle-tag-Title
+.cardTaskDate-tag-date, .cardTaskDetails-task-details, .cardTaskTitle-tag-Title, .cardTaskCreate-tag-date
 {
   font-size: 12pt;
   color: #080d19;

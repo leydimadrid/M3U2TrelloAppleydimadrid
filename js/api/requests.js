@@ -32,8 +32,8 @@ const createTask = (task) => {
   )}`;
 
   let taskCreate = document.createElement("p")
-  taskCreate.classList.add("cardTaskDate")
-  taskCreate.innerHTML = `<span class="cardTaskDate-tag-date">Creación:</span> ${dateFormat(
+  taskCreate.classList.add("cardTaskCreate")
+  taskCreate.innerHTML = `<span class="cardTaskCreate-tag-date">Creación:</span> ${dateFormat(
     task.created
   )}`;
   
