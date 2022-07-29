@@ -8,8 +8,8 @@ form.addEventListener('submit', (ev) => {
         title: formData.titleTask.value,
         person: formData.responsibleTask.value,
         details: formData.detailsTask.value,
-        deadline: Number(moment().add(formData.deadLineTask.value, 'days').format('X')),
-        created: Number(moment().format("X")),
+        deadline: formData.deadLineTask.value,
+        created: moment().format(),
         state: 'to-do'
         
     };

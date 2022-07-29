@@ -14,7 +14,7 @@
     <header class="lApp" id="app">
         <div class="headerApp">
             <img class="logo" src="./assets/Trello-logo.png" alt="Logo trello App">
-            <button class="button buttonPrimary" id="btnNewTask"> Crear nueva tarea </button>
+            <button class="buttonPrimary" id="btnNewTask"> Crear nueva tarea </button>
         </div>
     </header>
     <!-- Fin Header-->
@@ -24,7 +24,7 @@
         <div class="lContainer">
             <!--Columna tareas por hacer-->
             <section class="sectionApp">
-                <div class="sign1"></div>
+                <div class="blueSignal"></div>
                 <h2 class="sectionStatusTitle">Tareas por hacer<hr></hr></h2>
                 <div class="containerTasks" id="todoTasks"></div>
                 </section>
@@ -32,7 +32,7 @@
 
                 <!--Columna tareas en progreso-->
             <section class="sectionApp">
-                <div class="sign2"></div>
+                <div class="orangeSignal"></div>
                 <h2 class="sectionStatusTitle">Tareas en progreso <hr></hr></h2>
                 <div class="containerTasks" id="progressTasks"></div>
                 </section>
@@ -40,7 +40,7 @@
 
                  <!--Columna tareas finalizadas-->
             <section class="sectionApp">
-                <div class="sign3"></div>
+                <div class="greenSignal"></div>
                 <h2 class="sectionStatusTitle">Tareas finalizadas <hr></hr></h2>
                 <div class="containerTasks" id="doneTasks"></div>
                 </section>
@@ -65,10 +65,9 @@
                     <!--Input Descripción-->
                     <div class="rowForm">
                         <label for="detailsTask" class="formNewTaskLabel">Descripción:</label> <br>
-                        <input class="formNewTaskInput" name="detailsTask" id="detailsTask" placeholder="Ingresa la descripción de la tarea"></textarea>
+                        <input class="formNewTaskInput" name="detailsTask" id="detailsTask" placeholder="Ingresa la descripción de la tarea">
                     </div>
                     <!--Fin Input Descripción-->
-
 
                     <!--Input responsable-->
                     <div class="rowForm">
@@ -84,20 +83,15 @@
                     <!--Input plazo-->
                     <div class="rowForm">
                         <label for="deadLineTask" class="formNewTaskLabel">Plazo de entrega:</label> <br>
-                        <select name="deadLineTask" id="deadLineTask" class="formNewTaskInput">
-                            <option value="">Seleccionar</option>
-                            <option value="unDia">1 Día</option>
-                            <option value="dosDias">2 Días</option>
-                            <option value="unaSemana">1 Semana</option>
-                        </select>
+                     <input type="date" name="deadLineTask" id="deadLineTask">
                     </div>
-                    <!--End Input plazo-->
+                    <!--Fin Input plazo-->
                     
                     <!--Botones-->
                     <div class="rowForm">
                         <div class="formNewTaskButtons"> 
-                            <button class="button buttonPrimary" type="submit">Guardar</button>
-                            <button type="reset" class="button buttonSecondary ghost" id="btnCancelNewTask">Cancelar</button>
+                            <button class="buttonPrimary" type="submit">Guardar</button>
+                            <button type="reset" class="buttonSecondary" id="btnCancelNewTask">Cancelar</button>
                         </div>
                     </div>
                     <!--Fin Botones-->        
@@ -106,16 +100,17 @@
         </div>
 
     </aside>
-    <!--End Aside -->
+    <!--Fin Aside Crear nueva tarea-->
 
-    <!-- Recursos externos -->
+    <!--Recursos externos-->
     <script src="/libraries/axios.js"></script>
     <script src="https://momentjs.com/downloads/moment.js"></script>
     <script src="/libraries/draggable.js"></script>
     <script src="/libraries/hammer.js"></script>
 
-    <!-- Recursos internos -->
+    <!--Recursos internos-->
     <script src="/js/api/requests.js"></script>
+    <script src="/js/helpers/createTask.js"></script>
     <script src="/js/helpers/toggleModal.js"></script>
     <script src="/js/helpers/dates.js"></script>
     <script src="/js/helpers/draggandDrop.js"></script>

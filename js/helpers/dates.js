@@ -1,3 +1,3 @@
 const dateFormat = (time, format = 'DD/MM/YYYY') => {
-    return moment.unix(time).format(format);
+    return moment(time).format(format);
 };
