@@ -8,6 +8,18 @@ header {
   margin-bottom: 7px;
 }
 
+
+.chosen {
+ 
+    color: rgba(0,0,0,0);
+      transform: scale(1.02) rotate(-3deg);
+      
+  
+    }
+  
+
+
+
 .logo {
     width: 80PX;
     height: 20PX;
@@ -15,26 +27,26 @@ header {
     padding-left: 7px;
 }
 
-.mainApp {
+.appPrincipal {
   flex-direction: column;
   background: linear-gradient(90deg, rgb(156, 186, 231) 100%, rgb(149, 182, 231) 30%);
   max-height: auto;  
 }
 
-.mainApp,
-.mainApp .lContainer {
+.appPrincipal,
+.appPrincipal .contenedorPrincipal, .contenedorlistas {
   flex: 1;
   display: flex;
   gap: 1rem;
 }
 
-.lContainer {
+.contenedorPrincipal, .contenedorlistas {
   width: 100%;
   padding: 16px;
   max-height: auto;
 }
 
-.buttonPrimary {
+.botonNuevaTarea {
     color: rgb(255, 255, 255);
     float: right;
     font-family:sans-serif;
@@ -51,16 +63,16 @@ header {
     cursor:pointer;
 }
 
-.buttonPrimary:hover {
+.botonNuevaTarea:hover {
     background-color: rgb(5, 30, 172) ;
 }
 
-.buttonPrimary:active {
+.botonNuevaTarea:active {
     transform: translateY(2px);
     background-color:  rgb(17, 34, 133) ;
 }
 
-.sectionApp {
+.seccionTareas {
     display: flex;
     flex-direction:column;
     min-width: 50px;
@@ -73,7 +85,7 @@ header {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-.sectionStatusTitle {
+.tituloSeccion {
     color: rgb(0, 0, 0);
     font-family:sans-serif;
     font-size: 14pt;
@@ -84,7 +96,7 @@ header {
     font-stretch:ultra-expanded;
 }
 
-.blueSignal {
+.señalAzul {
   background-color: rgb(47, 84, 206);
   width: 30px;
   height: 10px;
@@ -92,7 +104,7 @@ header {
   margin-bottom: 8px;
 }
 
-.orangeSignal {
+.señalNaranja {
   background-color: rgb(240, 95, 12);
   width: 30px;
   height: 10px;
@@ -100,7 +112,7 @@ header {
   margin-bottom: 8px; 
 }
 
-.greenSignal {
+.señalVerde {
   background-color: rgb(35, 179, 59);
   width: 30px;
   height: 10px;
@@ -116,7 +128,14 @@ hr {
   width: 300px; 
 }
 
-.asideFormTitle hr {
+.tituloFormularioAside {
+  color: rgb(0, 0, 0);
+  font-size: 15pt;
+  font-family: sans-serif;
+  margin: 0px 0px 10px 0px;
+}
+
+.tituloFormularioAside hr {
   height: 2px;
   color:  rgb(255, 255, 255);
   border:#000000;
@@ -124,7 +143,7 @@ hr {
   width: 115px;  
 }
 
-.containerTasks {
+.contenedorTareas {
     flex: 1;
     display: flex;
     flex-direction:column;
@@ -148,7 +167,7 @@ hr {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transform: translate(100%);
   will-change: transform;
-  transition: transform 300ms ease-in-out;
+  transition: transform 1s;
   z-index: 100;
   border-radius: 5px;
 }
@@ -157,26 +176,19 @@ hr {
   transform: initial;
 }
 
-.asideFormTitle {
-    color: rgb(0, 0, 0);
-    font-size: 15pt;
-    font-family: sans-serif;
-    margin: 0px 0px 10px 0px;
-}
-
-.rowForm {
+.filaFormulario {
     width: 320px;
     height: 50px;
     padding-bottom: 10px;
 }
 
-.formNewTask {
+.nuevaTareaFormulario {
   margin:  0px;
   padding: 0px;
   width: 320px;
 }
 
-.formNewTaskInput {
+.nuevaTareaFormularioInput {
     border-style:ridge;
     border-radius: 3px;
     font-size: 12pt;
@@ -185,19 +197,45 @@ hr {
     padding-left: 7px;
 }
 
-#responsibleTask, #deadLineTask {
+#responsableTarea, #plazoTarea {
   height: 25px;
   width: 305px;
   font-size: 12pt;
 }
 
-.formNewTaskLabel {
+.formularioNuevaTarea-etiqueta {
     font-size: 12pt;
     font-family: sans-serif;
     font-weight:lighter;
 }
 
-.buttonSecondary {
+.botonGuardar {
+  color: rgb(255, 255, 255);
+  float: right;
+  font-family:sans-serif;
+  margin-top: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  padding: 2px;
+  border-radius: 4px;
+  background:  rgb(67, 85, 182);
+  border: transparent;
+  width: 200px;
+  height: 30px;
+  box-shadow: 2px 2px 4px 1px rgb(192, 192, 192) ;
+  cursor:pointer;
+}
+
+.botonGuardar:hover {
+  background-color: rgb(5, 30, 172) ;
+}
+
+.botonGuardar:active {
+  transform: translateY(2px);
+  background-color:  rgb(17, 34, 133) ;
+}
+
+.botonCancelar{
     color: rgb(255, 255, 255);
     float: right;
     font-family:sans-serif;
@@ -214,21 +252,21 @@ hr {
     cursor:pointer;
 }
 
-.buttonSecondary:hover {
+.botonCancelar:hover {
     background-color:rgb(5, 30, 172) ;
 }
 
-.buttonSecondary:active {
+.botonCancelar:active {
     transform: translateY(2px);
     background-color: rgb(17, 34, 133) ;
 }
 
-.formNewTaskButtons {
+.botonesFormularioNuevaTarea {
   display: flex;
   gap: 1rem / 2;
 }
 
-.cardTask {
+.TarjetaTarea {
   padding: 8px ;
   box-shadow:  0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   border-radius: 0.313rem;
@@ -238,25 +276,25 @@ hr {
   max-width: auto;  
 }
 
-.cardTask:hover {
+.TarjetaTarea:hover {
   transform: scale(1.02);
 }
 
-.cardTaskTitle {
+.tituloTarjetaTarea {
   font-size: 12pt;
   color: #000000;
   font-family: sans-serif;
 }
 
-.cardTaskResponsible, .cardTaskDetails,
-.cardTaskDate, .cardTaskTitle, .cardTaskCreate {
+.responsableTarjetaTarea, .descripcionTarjetaTarea,
+.fechaTarjetaTarea, .tituloTarjetaTarea, .creacionTarjetaTarea {
   font-size: 12pt;
   color:  #000000;
   font-family: sans-serif;
 }
 
-.cardTaskResponsible-tag-creator,
-.cardTaskDate-tag-date, .cardTaskDetails-task-details, .cardTaskTitle-tag-Title, .cardTaskCreate-tag-date {
+.etiquetaResponsableTarjetaTarea,
+.etiquetaFechaTarjetaTarea, .etiquetaDescripcionTarjetaTarea, .etiquetaTituloTarjetaTarea, .etiquetacreacionTarjetaTarea {
   font-size: 12pt;
   color: #080d19;
   font-family: sans-serif;

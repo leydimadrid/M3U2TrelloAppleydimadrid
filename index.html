@@ -11,38 +11,45 @@
 </head>
 <body>
     <!--Header-->    
-    <header class="lApp" id="app">
-        <div class="headerApp">
+    <header class=lApp" id="app">
+        <div class="ContenedorHeader">
             <img class="logo" src="./assets/Trello-logo.png" alt="Logo trello App">
-            <button class="buttonPrimary" id="btnNewTask"> Crear nueva tarea </button>
+            <button class="botonNuevaTarea" id="boton-NuevaTarea" > Crear nueva tarea </button>
         </div>
     </header>
     <!-- Fin Header-->
 
     <!--Contenedor columnas-->
-    <main class="mainApp">
-        <div class="lContainer">
+    <main class="appPrincipal">
+        <div id="contenedorlistas" class="contenedorlistas">
             <!--Columna tareas por hacer-->
-            <section class="sectionApp">
-                <div class="blueSignal"></div>
-                <h2 class="sectionStatusTitle">Tareas por hacer<hr></hr></h2>
-                <div class="containerTasks" id="todoTasks"></div>
+            <section class="seccionTareas">
+                <div class="señalAzul"></div>
+                <h2 class="tituloSeccion">Tareas por hacer<hr></hr></h2>
+                <div class="contenedorTareas" id="tareas1">
+                
+
+                </div> 
                 </section>
                 <!--Fin Columna tareas por hacer-->
 
                 <!--Columna tareas en progreso-->
-            <section class="sectionApp">
-                <div class="orangeSignal"></div>
-                <h2 class="sectionStatusTitle">Tareas en progreso <hr></hr></h2>
-                <div class="containerTasks" id="progressTasks"></div>
+            <section class="seccionTareas">
+                <div class="señalNaranja"></div>
+                <h2 class="tituloSeccion">Tareas en progreso <hr></hr></h2>
+                <div class="contenedorTareas" id="tareas2">
+
+                </div>
                 </section>
                 <!--Fin Columna tareas en progreso-->
 
                  <!--Columna tareas finalizadas-->
-            <section class="sectionApp">
-                <div class="greenSignal"></div>
-                <h2 class="sectionStatusTitle">Tareas finalizadas <hr></hr></h2>
-                <div class="containerTasks" id="doneTasks"></div>
+            <section class="seccionTareas">
+                <div class="señalVerde"></div>
+                <h2 class="tituloSeccion">Tareas finalizadas <hr></hr></h2>
+                <div class="contenedorTareas" id="tareas3">
+
+                </div>
                 </section>
                 <!--Fin Columna tareas finalizadas-->
         </div>
@@ -50,29 +57,29 @@
     <!--Fin Contenedor columnas-->
 
     <!--Aside Crear nueva tarea-->
-    <aside class="asideApp" id="modalNewTask">
-        <div class="lContainer">
-            <div class="formContainer">
-                <h2 class="asideFormTitle">Nueva tarea <hr></hr> </h2>
-                <form class="formNewTask" id="formNewTask">
+    <aside class="asideApp" id="modalNuevaTarea">
+        <div class="contenedorPrincipal">
+            <div class="contenedorFormulario">
+                <h2 class="tituloFormularioAside">Nueva tarea <hr></hr> </h2>
+                <form class="nuevaTareaFormulario" id="nuevaTareaFormulario">
                     <!--Input titulo-->
-                    <div class="rowForm">
-                        <label for="titleTask" class="formNewTaskLabel">Título:</label> <br>
-                        <input id="titleTask" name="titleTask" type="text" class="formNewTaskInput" placeholder="Escribe un título para la tarea">      
+                    <div class="filaFormulario">
+                        <label for="tituloTarea" class="formularioNuevaTarea-etiqueta">Título:</label> <br>
+                        <input id="titulo" name="tituloTarea" type="text" class="nuevaTareaFormulario" placeholder="Escribe un título para la tarea">      
                     </div>
                     <!--Fin Input titulo-->
 
                     <!--Input Descripción-->
-                    <div class="rowForm">
-                        <label for="detailsTask" class="formNewTaskLabel">Descripción:</label> <br>
-                        <input class="formNewTaskInput" name="detailsTask" id="detailsTask" placeholder="Ingresa la descripción de la tarea">
+                    <div class="filaFormulario">
+                        <label for="descripciontarea" class="formularioNuevaTarea-etiqueta">Descripción:</label> <br>
+                        <input class="nuevaTareaFormulario" name="descripciontarea" id="descripcion" placeholder="Ingresa la descripción de la tarea">
                     </div>
                     <!--Fin Input Descripción-->
 
                     <!--Input responsable-->
-                    <div class="rowForm">
-                        <label for="responsibleTask" class="formNewTaskLabel">Responsable:</label> <br>
-                        <select name="responsibleTask" id="responsibleTask" class="formNewTaskInput">
+                    <div class="filaFormulario">
+                        <label for="responsableTarea" class="formularioNuevaTarea-etiqueta">Responsable:</label> <br>
+                        <select name="responsableTarea"" id="responsable" class="nuevaTareaFormulario">
                             <option value="">Seleccionar</option>
                             <option value="Leydi">Leydi</option>
                             <option value="Johana">Johana</option>
@@ -81,40 +88,41 @@
                     <!--Fin Input responsable-->
 
                     <!--Input plazo-->
-                    <div class="rowForm">
-                        <label for="deadLineTask" class="formNewTaskLabel">Plazo de entrega:</label> <br>
-                     <input type="date" name="deadLineTask" id="deadLineTask">
+                    <div class="filaFormulario">
+                        <label for="plazoTarea" class="formularioNuevaTarea-etiqueta">Plazo de entrega:</label> <br>
+                     <input type="date" name="plazoTarea" id="plazo">
                     </div>
                     <!--Fin Input plazo-->
                     
                     <!--Botones-->
-                    <div class="rowForm">
-                        <div class="formNewTaskButtons"> 
-                            <button class="buttonPrimary" type="submit">Guardar</button>
-                            <button type="reset" class="buttonSecondary" id="btnCancelNewTask">Cancelar</button>
+                    <div class="filaFormulario">
+                        <div class="botonesFormularioNuevaTarea"> 
+                            <button id="botonGuardar" class="botonGuardar" type="submit">Guardar</button>
+                            <button type="reset" class="botonCancelar" id="boton-Cancelar">Cancelar</button>
                         </div>
                     </div>
-                    <!--Fin Botones-->        
+                    <!--Fin Botones--> 
+                          
                 </form>
             </div>
         </div>
 
     </aside>
-    <!--Fin Aside Crear nueva tarea-->
+    <div id="info"></div> 
+   
+</body>
+ <!--Fin Aside Crear nueva tarea-->
 
     <!--Recursos externos-->
-    <script src="/libraries/axios.js"></script>
-    <script src="https://momentjs.com/downloads/moment.js"></script>
-    <script src="/libraries/draggable.js"></script>
-    <script src="/libraries/hammer.js"></script>
+    <script src="./libraries/axios.js"></script>
+    <script src="./libraries/moment.js"></script>
+    <script src="./libraries/sortable.js"></script>
+
+    
 
     <!--Recursos internos-->
-    <script src="/js/api/requests.js"></script>
-    <script src="/js/helpers/createTask.js"></script>
-    <script src="/js/helpers/toggleModal.js"></script>
-    <script src="/js/helpers/dates.js"></script>
-    <script src="/js/helpers/draggandDrop.js"></script>
-    <script src="/js/helpers/gesturesHammer.js"></script>
-    <script src="js/helpers/newTask.js"></script>
-</body>
+    <script src="./js/index.js"></script>
+    <script src="./js/api/requests.js"></script>
+    
+    <script src="./js/agregarTarea.js"></script>
 </html>

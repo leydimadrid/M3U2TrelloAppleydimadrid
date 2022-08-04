@@ -1,22 +1,22 @@
 {
-    "tasks": [
+    "tareas": [
         {
             "id": 1,
-            "title": "Frontend",
-            "person": "Leydi",
-            "details": "Por definir",
-            "state": "to-do",
-            "deadline": 1660187909,
-            "created": 1659151109
+            "titulo": "Frontend",
+            "responsable": "Leydi",
+            "descripcion": "Por definir",
+            "estado": "1",
+            "plazo": 1660187909,
+            "creado": 1659151109
         },
         {
             "id": 2,
-            "title": "Backend",
-            "person": "Johana",
-            "details": "Por definir",
-            "state": "in-progress",
-            "deadline": 1660187909,
-            "created": 1659151109
+            "titulo": "Backend",
+            "responsable": "Johana",
+            "descripcion": "Por definir",
+            "estado": "2",
+            "plazo": 1660187909,
+            "creado": 1659151109
         }
     ]
   }
