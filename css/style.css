@@ -8,18 +8,13 @@ header {
   margin-bottom: 7px;
 }
 
-
 .chosen {
  
     color: rgba(0,0,0,0);
       transform: scale(1.02) rotate(-3deg);
-      
-  
+      opacity: 30%;
     }
   
-
-
-
 .logo {
     width: 80PX;
     height: 20PX;
