@@ -10,8 +10,8 @@
             const tarea =                                  
             `<div id="estadoTareas${cantidadTareas + 1}" class="TarjetaTarea">
                 <p><b>Tarea:</b> ${nuevaTareaFormulario[0].value}</p>
-                <p><b>Responsable:</b> ${nuevaTareaFormulario[1].value}</p>
-                <p><b>Descripción:</b> ${nuevaTareaFormulario[2].value}</p>
+                <p><b>Descripción:</b> ${nuevaTareaFormulario[1].value}</p>
+                <p><b>Responsable:</b> ${nuevaTareaFormulario[2].value}</p>
                 <p><b>Creación:</b> ${fechaF()} </p>
                 <p><b>Plazo de entrega:</b> ${fechaEntrega(nuevaTareaFormulario[3].value)} </p>
             </div>`
@@ -27,8 +27,8 @@
             const tarea =                                   
             `<div id="divtarea${el.id}" class="TarjetaTarea">
                 <p><b>Tarea:</b> ${el.titulo}</p>
-                <p><b>Responsable:</b> ${el.descripcion}</p>
-                <p><b>Descripción:</b> ${el.responsable}</p>
+                <p><b>Descripción:</b> ${el.descripcion}</p>
+                <p><b>Responsable:</b> ${el.responsable}</p>
                 <p><b>Creación:</b> ${unixAfecha(el.creacion)} </p>
                 <p><b>Plazo de entrega:</b> ${unixAfecha(el.plazo)} </p>
             </div>`

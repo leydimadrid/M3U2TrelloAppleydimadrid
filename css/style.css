@@ -191,10 +191,10 @@ hr {
     padding-left: 7px;
 }
 
-#responsableTarea, #plazoTarea {
-  height: 25px;
+#responsable, #plazo {
+  height: 22px;
   width: 305px;
-  font-size: 12pt;
+  font-size: 10pt;
 }
 
 .formularioNuevaTarea-etiqueta {
@@ -274,25 +274,9 @@ hr {
   transform: scale(1.02);
 }
 
-.tituloTarjetaTarea {
+.tituloTarjetaTarea, p {
   font-size: 12pt;
   color: #000000;
   font-family: sans-serif;
-}
-
-.responsableTarjetaTarea, .descripcionTarjetaTarea,
-.fechaTarjetaTarea, .tituloTarjetaTarea, .creacionTarjetaTarea {
-  font-size: 12pt;
-  color:  #000000;
-  font-family: sans-serif;
-}
-
-.etiquetaResponsableTarjetaTarea,
-.etiquetaFechaTarjetaTarea, .etiquetaDescripcionTarjetaTarea, .etiquetaTituloTarjetaTarea, .etiquetacreacionTarjetaTarea {
-  font-size: 12pt;
-  color: #080d19;
-  font-family: sans-serif;
-  font-weight:bolder;
-  font-stretch:expanded;
 }
 
