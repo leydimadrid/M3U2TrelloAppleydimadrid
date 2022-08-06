@@ -1,4 +1,3 @@
-const info = document.getElementById("info");
 const modalNuevaTarea = document.querySelector('#modalNuevaTarea');
 const botonNuevaTarea = document.querySelector('#boton-NuevaTarea');
 const botonCancelar = document.querySelector('#boton-Cancelar');
