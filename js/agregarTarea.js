@@ -5,20 +5,7 @@
         if(nuevaTareaFormulario[0].value =="" || nuevaTareaFormulario[1].value =="" || nuevaTareaFormulario[2].value =="" || nuevaTareaFormulario[3].value =="" ){
             alert("No pueden haber campos vacíos");
         }else{
-            const cantidadTareas = document.getElementsByClassName("TarjetaTarea").length;
-            const estadoTareas = document.getElementById(`tareas1`)
-            const tarea =                                  
-            `<div id="estadoTareas${cantidadTareas + 1}" class="TarjetaTarea">
-                <p><b>Tarea:</b> ${nuevaTareaFormulario[0].value}</p>
-                <p><b>Descripción:</b> ${nuevaTareaFormulario[1].value}</p>
-                <p><b>Responsable:</b> ${nuevaTareaFormulario[2].value}</p>
-                <p><b>Creación:</b> ${fechaF()} </p>
-                <p><b>Plazo de entrega:</b> ${fechaEntrega(nuevaTareaFormulario[3].value)} </p>
-            </div>`
-
-            
-            estadoTareas.innerHTML += tarea
-            nuevaTareaFormulario.reset();
+            postAgregarTarea(nuevaTareaFormulario);
         }
         })
     

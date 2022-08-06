@@ -3,8 +3,8 @@
         {
             "id": 1,
             "titulo": "Frontend",
-            "responsable": "Leydi",
             "descripcion": "Por definir",
+            "responsable": "Leydi",
             "estado": "1",
             "plazo": 1660187909,
             "creacion": 1659151109
@@ -12,8 +12,8 @@
         {
             "id": 2,
             "titulo": "Backend",
-            "responsable": "Johana",
             "descripcion": "Por definir",
+            "responsable": "Johana",
             "estado": "2",
             "plazo": 1660187909,
             "creacion": 1659151109

@@ -4,6 +4,7 @@ const botonCancelar = document.querySelector('#boton-Cancelar');
 
 botonNuevaTarea.addEventListener('click', () => {
     modalNuevaTarea.classList.add('active');
+    nuevaTareaFormulario[0].focus()
   });
   
   botonCancelar.addEventListener('click', () => {
