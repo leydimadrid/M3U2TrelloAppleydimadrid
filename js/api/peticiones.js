@@ -18,7 +18,7 @@ const baseDeDatos = async () => {
   baseDeDatos();  
 
 
-  const postAgregarTarea = async (nuevaTareaFormulario)=>{
+  const postAgregarTarea = (nuevaTareaFormulario)=>{
     const data = {
         titulo: nuevaTareaFormulario[0].value,
         descripcion: nuevaTareaFormulario[1].value,

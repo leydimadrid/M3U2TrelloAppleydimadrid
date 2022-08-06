@@ -4,6 +4,6 @@
       }
 
     const fechaAunix = (num,dias)=>{
-        let  fecchaUnix = moment().add(num,dias).unix();
-        return fecchaUnix
+        const fechaUnix = moment().add(num,dias).unix();
+        return fechaUnix
         } 

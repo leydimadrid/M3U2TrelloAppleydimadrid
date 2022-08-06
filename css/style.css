@@ -19,6 +19,7 @@ header {
     height: 20PX;
     padding-top: 14px;
     padding-left: 7px;
+    object-fit: cover;
 }
 
 .appPrincipal {
@@ -180,6 +181,7 @@ hr {
   margin:  0px;
   padding: 0px;
   width: 320px;
+  height: 25px;
 }
 
 .nuevaTareaFormularioInput {
@@ -191,8 +193,8 @@ hr {
     padding-left: 7px;
 }
 
-#responsable, #plazo {
-  height: 22px;
+#responsable {
+  height: 27px;
   width: 305px;
   font-size: 10pt;
 }
